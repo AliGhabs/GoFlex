@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'page-accueil-entreprise',
     loadChildren: () => import('./page-accueil-entreprise/page-accueil-entreprise.module').then( m => m.PageAccueilEntreprisePageModule)
   },
+  {
+    path: 'forfait',
+    loadChildren: () => import('./forfait/forfait.module').then( m => m.ForfaitPageModule)
+  },
 ];
 
 @NgModule({
