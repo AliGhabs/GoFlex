@@ -1,0 +1,16 @@
+.mid-img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+.border-color {
+  border: 4px solid #315c5e;
+  border-radius: 50%;
+  width: fit-content;
+}
+.border-white {
+  border: 4px solid white;
+  border-radius: 50%;
+  width: fit-content;
+}

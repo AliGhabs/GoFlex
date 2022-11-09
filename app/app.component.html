@@ -1,0 +1,43 @@
+<ion-app>
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-content>
+      <div class="menu-header-background"></div>
+      <div class="header-content">
+        <img src="../assets/Logo Go Flex.jpg" alt="">
+        <ion-label>
+          <h2>Arthur Jozeau</h2>
+          <P>Assistant marketing</P>
+        </ion-label>
+      </div>
+      <div class="infos-button">
+        <ion-button><ion-icon slot="start" name="document-text-outline"></ion-icon>Mon menu</ion-button>
+      </div>
+      <ion-list class="menu-items" lines="none">
+        <ion-menu-toggle>
+        <ion-item routerLink="/profil">
+          <ion-icon name="person-outline"></ion-icon>Profil
+        </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+        <ion-item routerLink="/trajets">
+          <ion-icon name="calendar-outline"></ion-icon>Trajets précédents
+        </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+        <ion-item routerLink="/covoiturage">
+          <ion-icon name="car-sport-outline"></ion-icon>Covoiturage
+        </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+        <ion-item routerLink="/mobilite">
+          <ion-icon name="bicycle-outline"></ion-icon>Mobilité
+        </ion-item>
+       </ion-menu-toggle>
+        <ion-item routerLink="/deconnexion" style="--color: red;">
+          <ion-icon color="danger" name="exit-outline"></ion-icon>Déconnexion
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
