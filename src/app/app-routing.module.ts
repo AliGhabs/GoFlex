@@ -35,6 +35,26 @@ const routes: Routes = [
     path: 'forfait',
     loadChildren: () => import('./forfait/forfait.module').then( m => m.ForfaitPageModule)
   },
+  {
+    path: 'badge',
+    loadChildren: () => import('./badge/badge.module').then( m => m.BadgePageModule)
+  },
+  {
+    path: 'mobilite',
+    loadChildren: () => import('./mobilite/mobilite.module').then( m => m.MobilitePageModule)
+  },
+  {
+    path: 'covoiturage',
+    loadChildren: () => import('./covoiturage/covoiturage.module').then( m => m.CovoituragePageModule)
+  },
+  {
+    path: 'trajets',
+    loadChildren: () => import('./trajets/trajets.module').then( m => m.TrajetsPageModule)
+  },
+  {
+    path: 'profil',
+    loadChildren: () => import('./profil/profil.module').then( m => m.ProfilPageModule)
+  },
 ];
 
 @NgModule({

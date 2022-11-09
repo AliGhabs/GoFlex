@@ -13,18 +13,26 @@
         <ion-button><ion-icon slot="start" name="document-text-outline"></ion-icon>Mon menu</ion-button>
       </div>
       <ion-list class="menu-items" lines="none">
-        <ion-item routerLink="/home">
+        <ion-menu-toggle>
+        <ion-item routerLink="/profil">
           <ion-icon name="person-outline"></ion-icon>Profil
         </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
         <ion-item routerLink="/trajets">
           <ion-icon name="calendar-outline"></ion-icon>Trajets précédents
         </ion-item>
-        <ion-item class="active" routerLink="/covoiturage">
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+        <ion-item routerLink="/covoiturage">
           <ion-icon name="car-sport-outline"></ion-icon>Covoiturage
         </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
         <ion-item routerLink="/mobilite">
           <ion-icon name="bicycle-outline"></ion-icon>Mobilité
         </ion-item>
+       </ion-menu-toggle>
         <ion-item routerLink="/deconnexion" style="--color: red;">
           <ion-icon color="danger" name="exit-outline"></ion-icon>Déconnexion
         </ion-item>

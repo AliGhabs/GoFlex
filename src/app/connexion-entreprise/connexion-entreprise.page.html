@@ -23,23 +23,36 @@
 
 <ion-row>
   <ion-col>
+    <div *ngIf="!connected">
         <ion-list>
           <ion-item>
             <ion-label color="dark" position="floating">Email : </ion-label>
-            <ion-input color="dark" type="mail"> </ion-input>
+            <ion-input color="dark" type="mail" [(ngModel)]="dataUser.email" > </ion-input>
           </ion-item>
 
           <ion-item>
             <ion-label color="dark" position="floating">Mot de passe : </ion-label>
-            <ion-input color="dark" type="password"> </ion-input>
+            <ion-input color="dark" type="password" [(ngModel)]="dataUser.password"> </ion-input>
           </ion-item>
 
           <ion-item>
-            <ion-label color="dark" position="floating">Code Entreprise : </ion-label>
+            <ion-label color="dark" position="floating"> Code Entreprise : </ion-label>
             <ion-input color="dark" type="password"> </ion-input>
           </ion-item>
-
         </ion-list>
+    </div>
+
+    <div *ngIf="connected">
+      <h1> Vous êtes bien connecté ! </h1>
+      <ion-button (click)="logout()" color="danger"> Déconnexion </ion-button>
+    </div>
+  </ion-col>
+</ion-row>
+
+<ion-row style="height: 25px;"> </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="login()" expand="block"> Connexion </ion-button>
   </ion-col>
 </ion-row>
 
